@@ -9,11 +9,29 @@ a {
 ul {
   list-style: none;
 }
+@font-face {
+  font-family: "TMoneyDungunbaram";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TMoneyDungunbaram";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff")
+    format("woff");
+  font-weight: 800;
+  font-display: swap;
+}
+
+body {
+  font-family: "TMoneyDungunbaram", sans-serif;
+}
 @media (max-width: 600px) {
   /*visual*/
   #visual {
     background-color: #afdaff;
-    height: 100vh;
+    height: 150vh;
     position: relative;
     width: 100%;
   }
@@ -27,7 +45,7 @@ ul {
     height: 200px;
   }
   #visual .cloud div {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transition: 0.5s;
   }
   #visual .cloud .cloud1,
@@ -103,6 +121,133 @@ ul {
     height: 100%;
     display: block;
   }
+  /*container
+  section1 intro*/
+  #container .intro {
+    background-color: #afd9ff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #container .intro .whiteBox {
+    background-color: #fff;
+    width: 90%;
+    margin: 0px auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    height: 80%;
+    border-radius: 100px 0px 100px 0px;
+  }
+  #container .intro .whiteBox .introBox {
+    background-color: rgba(175, 217, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    color: #005493;
+    padding: 0px 50px;
+    justify-content: center;
+
+    font-size: 15px;
+  }
+  #container .intro .whiteBox .introBox .leftBox {
+    width: 50%;
+    /* border: 1px solid red; */
+  }
+  #container .intro .whiteBox .introBox .leftBox .profile {
+    width: 100%;
+    height: 100%;
+  }
+  #container .intro .whiteBox .introBox .leftBox .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+  }
+  #container .intro .whiteBox .introBox p {
+    margin: 50px;
+  }
+  #container .intro .whiteBox .introBox .rightBox {
+    width: 60%;
+  }
+  #container .intro .whiteBox .introBox .rightBox span {
+    font-size: 25px;
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil {
+    font-size: 25px;
+    margin: 50px;
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil ul {
+    /* display: flex;
+    gap: 30px; */
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    /* width: 120%;
+    height: 80px; */
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil ul li {
+    width: clac(100% / 4);
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil ul li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #container .intro .cloud {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+  }
+  #container .intro .cloud div {
+    width: 15%;
+    height: 40%;
+    animation: cloud 3s ease-in-out infinite;
+  }
+  #container .intro .cloud div img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @keyframes cloud {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #container .intro .wBox1 {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #container .intro .wBox2 {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
 }
 @media (min-width: 600px) and (max-width: 1200px) {
   /*visual*/
@@ -122,7 +267,7 @@ ul {
     height: 200px;
   }
   #visual .cloud div {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transition: 0.5s;
   }
   #visual .cloud .cloud1,
@@ -198,7 +343,131 @@ ul {
     height: 100%;
     display: block;
   }
+  /*container
+  section1 intro*/
+  #container .intro {
+    background-color: #afd9ff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #container .intro .whiteBox {
+    background-color: #fff;
+    width: 90%;
+    margin: 0px auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    height: 80%;
+    border-radius: 100px 0px 100px 0px;
+  }
+  #container .intro .whiteBox .introBox {
+    background-color: rgba(175, 217, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    color: #005493;
+    padding: 0px 50px;
+    justify-content: center;
+
+    font-size: 20px;
+  }
+  #container .intro .whiteBox .introBox .leftBox {
+    width: 50%;
+    /* border: 1px solid red; */
+  }
+  #container .intro .whiteBox .introBox .leftBox .profile {
+    width: 100%;
+    height: 100%;
+  }
+  #container .intro .whiteBox .introBox .leftBox .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+  }
+  #container .intro .whiteBox .introBox p {
+    margin: 50px;
+  }
+  #container .intro .whiteBox .introBox .rightBox {
+    width: 60%;
+  }
+  #container .intro .whiteBox .introBox .rightBox span {
+    font-size: 40px;
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil {
+    font-size: 40px;
+    margin: 50px;
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    /* border: 1px solid red; */
+    width: 120%;
+    height: 80px;
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil ul li {
+    width: clac(100% / 4);
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil ul li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #container .intro .cloud {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+  }
+  #container .intro .cloud div {
+    width: 15%;
+    height: 40%;
+    animation: cloud 3s ease-in-out infinite;
+  }
+  #container .intro .cloud div img {
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes cloud {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #container .intro .wBox1 {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #container .intro .wBox2 {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
 }
+
 @media (min-width: 1200px) {
   /*visual*/
   #visual {
@@ -209,32 +478,30 @@ ul {
   /*cloud*/
   #visual .cloud {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0px auto;
+    justify-content: center;
+    gap: 50px;
     padding-top: 50px;
-    height: 200px;
   }
   #visual .cloud div {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     transition: 0.5s;
   }
   #visual .cloud .cloud1,
   .cloud3,
   .cloud5 {
-    width: 260px;
-    height: 150px;
+    width: 10%;
+    height: 60%;
   }
   #visual .cloud .cloud2,
   .cloud4,
   .cloud6 {
-    width: 266px;
-    height: 160px;
+    width: 10%;
+    height: 70%;
   }
   #visual .cloud div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     animation: cloud 3s ease-in-out infinite;
   }
   @keyframes cloud {
@@ -265,8 +532,6 @@ ul {
     margin: 0px auto;
   }
   #visual .text .portfolio img {
-    /* display: block;
-  margin: 0px auto; */
     object-fit: cover;
     width: 100%;
   }
@@ -291,5 +556,113 @@ ul {
     width: 100%;
     height: 100%;
     display: block;
+  }
+  /*container
+  section1 intro*/
+  #container .intro {
+    background-color: #afd9ff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #container .intro .whiteBox {
+    background-color: #fff;
+    width: 90%;
+    margin: 0px auto;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    height: 80%;
+    border-radius: 100px 0px 100px 0px;
+  }
+  #container .intro .whiteBox .introBox {
+    background-color: rgba(175, 217, 255, 0.3);
+    width: 93%;
+    height: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    color: #005493;
+    padding: 0px 50px;
+    justify-content: center;
+
+    font-size: 30px;
+  }
+  #container .intro .whiteBox .introBox .leftBox {
+    width: calc(100% / 2);
+  }
+  #container .intro .whiteBox .introBox .leftBox .profile {
+    width: 600px;
+    height: 500px;
+  }
+  #container .intro .whiteBox .introBox .leftBox .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 60px;
+  }
+  #container .intro .whiteBox .introBox p {
+    margin: 50px;
+  }
+  #container .intro .whiteBox .introBox .rightBox span {
+    font-size: 40px;
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil {
+    font-size: 40px;
+    margin: 50px;
+  }
+  #container .intro .whiteBox .introBox .rightBox .skil ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  #container .intro .cloud {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+  }
+  #container .intro .cloud div {
+    width: 10%;
+    height: 40%;
+    animation: cloud 3s ease-in-out infinite;
+  }
+  #container .intro .cloud div img {
+    width: 100%;
+    height: 100%;
+  }
+  @keyframes cloud {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #container .intro .wBox1 {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  #container .intro .wBox2 {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
 }
