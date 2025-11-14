@@ -62,13 +62,13 @@ ul {
   /*text*/
   #visual .text {
     background-color: rgba(255, 255, 255, 0.5);
-    width: 80%;
-    margin: 50px auto;
+    width: 90%;
+    margin: 0px auto;
     border-radius: 100px 0px 100px 0px;
     /* opacity: 0.5; */
     height: 60vh;
     transform: scale(0);
-    transition: 4s;
+    transition: 3s;
   }
   #visual .text .portfolio {
     padding: 50px 0px;
@@ -82,16 +82,16 @@ ul {
     width: 100%;
   }
   #visual .text p {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-align: center;
     color: #6dade6;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
   }
   /*mainHanle*/
   #visual .mainHanle {
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 45%;
     position: absolute;
     bottom: 0px;
     left: 50%;
